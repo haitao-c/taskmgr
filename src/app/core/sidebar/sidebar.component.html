@@ -1,0 +1,29 @@
+<mat-nav-list>
+    <h3 mat-subheader>项目</h3>
+    <mat-list-item>
+        <!-- mat-list-icon把icon摆放到和字一起 -->
+        <mat-icon mat-list-icon svgIcon="projects"></mat-icon>
+        <!-- mat-line: 独占一行 -->
+        <span mat-line>项目首页</span>
+        <!-- mat-subheader: 字体变小 -->
+        <span mat-line mat-subheader>查看您的所有项目</span>
+    </mat-list-item>
+    <h3 mat-subheader>日历</h3>
+    <mat-list-item>
+        <mat-icon mat-list-icon svgIcon="month"></mat-icon>
+        <span mat-line>月视图</span>
+        <span mat-line mat-subheader>按月查看您的任务</span>
+    </mat-list-item>
+    <mat-list-item>
+        <mat-icon mat-list-icon svgIcon="week"></mat-icon>
+        <span mat-line>周视图</span>
+        <span mat-line mat-subheader>按周查看您的任务</span>
+    </mat-list-item>
+    <mat-list-item>
+        <!-- [svgIcon]= 表示用变量来为svgIcon赋值;   -->
+        <mat-icon mat-list-icon [svgIcon]="today"></mat-icon>
+        <span mat-line>日视图</span>
+        <span mat-line mat-subheader>按天查看您的任务</span>
+    </mat-list-item>
+   
+</mat-nav-list>

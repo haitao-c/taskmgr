@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+@import "theme.scss";
+//@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+mat-sidenav-container,html,body,app-root,.site{
+    width:100%;
+    height: 100%;
+    margin:0;
+}
+
+
+.site {                         // 外层容器
+    display: flex;
+    flex-direction: column; // 纵向按列排
+}
+
+main{
+    flex:1;             // 用main撑满header和footer
+}
+
+.fill-remaining-space{
+    // 属性含义参考http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool)
+    // 使用flexbox填充剩余空间
+    // @angular/material 中的很多控件使用了flex布局
+    flex: 1 1 auto; 
+}
+
+.full-width{
+    width:100%;
+}
